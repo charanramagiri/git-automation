@@ -4,7 +4,7 @@ public class Solution {
         int n = nums.length;
         int[] result = new int[n];
 
-        // Brute force comparison
+        
         for (int i = 0; i < n; i++) {
             int count = 0;
             for (int j = 0; j < n; j++) {
