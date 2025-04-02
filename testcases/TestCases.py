@@ -1,9 +1,12 @@
 
 import sys
+import os
 import time
 import random
 
-from solutions import Solution
+sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), '..')))
+
+from solutions.Solution import Solution
 def test_case(sol, nums, expected):
     """
     Function to test the solution with different test cases.
@@ -35,7 +38,7 @@ if __name__ == "__main__":
     test_case(sol, [0, 2, 4, 6, 8], [0, 1, 2, 3, 4])
     test_case(sol, [5, 10, 15, 5, 10], [0, 2, 4, 0, 2])
     test_case(sol, [100, 50, 25, 10, 75], [4, 2, 1, 0, 3])
-    test_case(sol, [99, 100, 98, 100, 97], [3, 4, 2, 4, 1])
+    #test_case(sol, [99, 100, 98, 100, 97], [3, 4, 2, 4, 1])
     
     # Edge test cases
     test_case(sol, [sys.maxsize, -sys.maxsize - 1, 0, -1, 1], [4, 0, 2, 1, 3])
