@@ -23,3 +23,5 @@ public:
         return result;
     }
 };
+
+#endif // SOLUTION_H
