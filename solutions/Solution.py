@@ -8,7 +8,7 @@ class Solution:
         n = len(nums)
         result = [0] * n
         
-        # Brute force comparison
+        
         for i in range(n):
             count = 0
             for j in range(n):
