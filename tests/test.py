@@ -6,7 +6,7 @@ from typing import List  # Import List for type hinting
 
 sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), "..")))
 
-from solutions.solution import Solution  # Ensure correct package structure
+from solutions.Solution import Solution  # Ensure correct package structure
 
 def test_case(sol: Solution, nums: List[int], expected: List[int]):
     """
@@ -51,7 +51,6 @@ if __name__ == "__main__":
     test_case(sol, [0, -1, -2, -3, -4, -5], [5, 4, 3, 2, 1, 0])
     test_case(sol, [1, 2, 2, 3, 3, 3], [0, 1, 1, 3, 3, 3])
     
-    # Large input cases
     # large_case1 = [0] * 100000
     # test_case(sol, large_case1, [0] * 100000)
     
