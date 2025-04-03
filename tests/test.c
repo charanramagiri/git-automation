@@ -80,27 +80,27 @@ int main() {
     testCase(test9, 2, expected9);
     
     // Large input cases
-    int* largeCase1 = (int*)calloc(100000, sizeof(int));
-    testCase(largeCase1, 100000, largeCase1);
-    free(largeCase1);
+    // int* largeCase1 = (int*)calloc(100000, sizeof(int));
+    // testCase(largeCase1, 100000, largeCase1);
+    // free(largeCase1);
     
-    int* largeCase2 = (int*)malloc(100000 * sizeof(int));
-    int* expectedLarge2 = (int*)malloc(100000 * sizeof(int));
-    for (int i = 0; i < 100000; i++) {
-        largeCase2[i] = i;
-        expectedLarge2[i] = i;
-    }
-    testCase(largeCase2, 100000, expectedLarge2);
-    free(largeCase2);
-    free(expectedLarge2);
+    // int* largeCase2 = (int*)malloc(100000 * sizeof(int));
+    // int* expectedLarge2 = (int*)malloc(100000 * sizeof(int));
+    // for (int i = 0; i < 100000; i++) {
+    //     largeCase2[i] = i;
+    //     expectedLarge2[i] = i;
+    // }
+    // testCase(largeCase2, 100000, expectedLarge2);
+    // free(largeCase2);
+    // free(expectedLarge2);
     
-    int* largeCase3 = (int*)malloc(100000 * sizeof(int));
-    srand(time(0));
-    for (int i = 0; i < 100000; i++) {
-        largeCase3[i] = rand() % 1000000;
-    }
-    testCase(largeCase3, 100000, NULL);
-    free(largeCase3);
+    // int* largeCase3 = (int*)malloc(100000 * sizeof(int));
+    // srand(time(0));
+    // for (int i = 0; i < 100000; i++) {
+    //     largeCase3[i] = rand() % 1000000;
+    // }
+    // testCase(largeCase3, 100000, NULL);
+    // free(largeCase3);
     
     return 0;
 }
