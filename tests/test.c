@@ -4,23 +4,20 @@
 #include <time.h>
 #include "../solutions/Solution.c"
 
-
 // Function prototype
-void smallerNumbersThanCurrent(int* nums, int n, int* result);
+int* smallerNumbersThanCurrent(int* nums, int numsSize, int* returnSize);
 
 // Function to test the solution with different test cases
 void testCase(int* nums, int n, int* expected) {
     clock_t startTime = clock(); // Start timing execution
-    int* output = (int*)malloc(n * sizeof(int));
-    
-    smallerNumbersThanCurrent(nums, n, output);
-    
+    int returnSize;
+    int* output = smallerNumbersThanCurrent(nums, n, &returnSize);
     clock_t endTime = clock(); // End timing execution
     
     // Compare output with expected result
     if (expected != NULL) {
-        int passed = 1;
-        for (int i = 0; i < n; i++) {
+        int passed = (returnSize == n);
+        for (int i = 0; i < n && passed; i++) {
             if (output[i] != expected[i]) {
                 passed = 0;
                 break;
