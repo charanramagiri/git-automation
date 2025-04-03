@@ -2,6 +2,7 @@ from typing import List
 
 class Solution:
     def smallerNumbersThanCurrent(self, nums: List[int]) -> List[int]:
+        #write your code here
         result = []
         
         for i in range(len(nums)):  # Iterate through each element
