@@ -1,4 +1,3 @@
-
 class Solution:
-    def smallerNumbersThanCurrent(self, nums):
+    def smallerNumbersThanCurrent(self, nums: List[int]) -> List[int]:
         
