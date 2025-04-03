@@ -4,7 +4,7 @@ import java.util.Random;
 
 import solutions.Solution; // Update this to match the actual package of the Solution class, or remove the package if it's in the default package.
 
-public class TestCases {
+public class Test {
     public static void main(String[] args) {
         Solution sol = new Solution();
 
