@@ -1,7 +1,7 @@
 package solutions;
 public class Solution {
     public int[] smallerNumbersThanCurrent(int[] nums) {
-        //write your code here
+        //write your code 
         int n = nums.length;
         int[] result = new int[n];
 
