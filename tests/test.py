@@ -4,9 +4,7 @@ import time
 #import random
 from typing import List  # Import List for type hinting
 
-#sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), "..")))
-#import sys
-sys.path.insert(0, '../')
+sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), "..")))
 
 from solutions.solution import Solution  # Ensure correct package structure
 
